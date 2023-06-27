@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Détails - Moko & Co</title>
+
+    <!-- lien css du style_principal -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- liens header et footer -->
+    <link rel="stylesheet" href="../CSS/heafoo.css">
+
+    <!-- icons font-awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- start navbar -->
+    <header>
+        <div class="top2top">
+            <div>CIV</div>
+            <div>IDT-Consulting sous reserve</div>
+            <div>Code2.1</div>
+        </div>
+        <div class="top_header">
+            <div class="bloc_menu">
+                <ul class="menu">
+                    <li><a href="indexCon.html" class="logo">Moko & Co<span style="color:rgba(254, 102, 102, 1);">.</span></a></li>
+                    <li><a href="indexCon.html">Accueil</a></li>
+                    <li><a href="collectionCon.html">Collection</a></li>
+                    <li><a href="aproposCon.html">A propos</a></li>
+                    <li><a href="contactCon.html">Contact</a></li>
+                </ul>    
+            </div>
+            <div class="bloc_right">
+                <div style="width:64%">
+                    <i class="fa fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Recherche">
+                </div>
+                <div style="width:12%">
+                    <a href="panierCon.html"><i class="fa fa-cart-shopping"></i><span style="color:#000;" class="panTop">3</span></a> 
+                </div>
+                <div>
+                    <a href="../index.html">deconnexion</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end navbar -->
+
+    <section id="secDETaiPanier">
+        <div class="top">
+            <div class="image">
+                <img src="../IMG/pexels-david-bartus-297933.jpg" alt="" width="100%" height="100%" object-fit="cover">
+            </div>
+            <div class="description">
+                <h3 class="nomARt">Chemise Thonny</h3>
+                <p>
+                   <span class="static_price">10000</span> fcfa <br><br>
+                    Cette chemise à été fabriquer par <br>
+                    Thonny, bon tissu et resistant.
+                </p>
+                <button class="btnT">S</button>
+                <button class="btnT">M</button>
+                <button class="btnT">L</button>
+                <p style="color:#999;">Taille</p>
+                <p>
+                    <button class="btn-detail" id="AjoutPan">Ajouter au panier - <span class="prix">10000</span> fcfa</button>              
+                    <span class="wrapperBtn">
+                        <button class="minus" style="border:none;background:#fff;" onclick="decrementer()">-</button>
+                        <input type="text" class="quantite" value="0" style="width: 20px;border:none;">
+                        <button class="plus" style="border:none;background:#fff;" onclick="incrementer()">+</button>
+                    </span>
+                </p>
+                <p><a href="https://wa.me/0506348232"><button type="submit" id="bgc" class="btn-detail">Commander sur whatsapp</button></a></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="card_imgPr">
+            <div class="c">
+                <img src="../IMG/Product_Image-removebg-preview.png" alt="" height="300" width="300" class="">
+                <div style="text-align:left" class="elem">
+                    <h3  class="TeT">Pull skye</h3>
+                    <p class="prixEle">5000 fcfa</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../IMG/trico.webp" alt="" height="300" width="300" class="">
+                <div style="text-align:left" class="elem">
+                    <h3 class="TeT">Tricot</h3>
+                    <p class="prixEle">15000 fcfa</p>
+                </div>
+            </div>
+            <div class="c">
+                <img src="../IMG/lin_femmPr.jpeg" alt="" height="300" width="300" class="">
+                <div style="text-align:left" class="elem">
+                    <h3 class="TeT">Chemise laine</h3>
+                    <p class="prixEle">8000 fcfa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- trait de bas -->
+    <div class="traifoo"></div>
+
+    <!-- start footer -->
+    <footer>
+        <div class="top">
+            <div class="fooHea footer-email-form">
+                <h2>Rejoignez notre newsletter</h2>
+                <p>Salut, inscrivez-vous, cela ne prend qu'une seconde pour être le <br> premier à découvrir nos dernières nouvelles et promotions…</p>
+                <div>
+                    <input type="email" placeholder="Adresse email" id="footer-email">
+                    <a href="#"><input type="submit" value="S'inscrire" id="footer-email-btn"></a>
+                </div>
+                
+            </div>
+            <div class="fooHea footer2">
+                <h2>Moko & Co<span style="color:rgba(254, 102, 102, 1);">.</span></h2>
+                <a href="#"><i class="fa fa-phone"></i> +225 0506348232</a><br>
+                <a href="#"><i class="fa fa-location-dot"></i> BP Abidjan, Marcory GFCI</a><br>
+                <a href="#"><i class="fa fa-envelope"></i>  mokonan99@gmail.com</a>
+            </div>
+            <div class="fooHea footer3">
+                <h2>Categories</h2>
+                <a href="#">Collection</a>
+                <a href="#">Homme</a>
+                <a href="#">Femme</a>
+            </div>
+            <div class="fooHea footer4">
+                <h2>Liens</h2>
+                <a href="#">Accueil</a>
+                <a href="collectionCon.html">Collection</a>
+                <a href="aproposCon.html">A propos</a>
+                <a href="contactcon.html">Contact</a>
+            </div>
+        </div>
+        <div class="top3top">
+            <div>Copyrights <span style="color:rgba(254, 102, 102, 1);">Code2.1</span>. Touts droits reservee <span style="color:rgba(254, 102, 102, 1);">moko & cO.</span></div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script>
+        var data = 1
+        document.querySelector('.quantite').value = data;
+
+        function decrementer(){
+            if ( document.querySelector('.quantite').value > 0 ){
+                data = data - 1;
+                document.querySelector('.quantite').value = data
+                subTotal()
+            }
+        }
+
+        function incrementer(){
+            data = data + 1;
+            document.querySelector('.quantite').value = data
+            subTotal()
+        }
+    
+        // Somme totale
+        function subTotal(){
+            let prix = parseInt(document.querySelector(".static_price").innerText);
+            let quantite = parseInt(document.querySelector(".quantite").value);
+            let subT = eval(prix*quantite)
+
+            console.log("le prix" + prix)
+            console.log(" la quntité " + quantite)
+            console.log(subT)
+
+            document.querySelector(".prix").innerHTML = subT
+        }
+
+    </script>
+
+    <script src="../JS/script.js"></script>
+    <script src="../JS/panier.js"></script>
+    
+</body>
+</html>

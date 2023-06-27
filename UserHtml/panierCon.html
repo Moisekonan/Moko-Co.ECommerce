@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre panier - Moko & Co</title>
+
+    <!-- lien css du style_principal -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- liens header et footer -->
+    <link rel="stylesheet" href="../CSS/heafoo.css">
+
+    <!-- icons font-awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- start navbar -->
+    <header>
+        <div class="top2top">
+            <div>CIV</div>
+            <div>IDT-Consulting sous reserve</div>
+            <div>Code2.1</div>
+        </div>
+        <div class="top_header">
+            <div class="bloc_menu">
+                <ul class="menu">
+                    <li><a href="indexCon.html" class="logo">Moko & Co<span style="color:rgba(254, 102, 102, 1);">.</span></a></li>
+                    <li><a href="indexCon.html">Accueil</a></li>
+                    <li><a href="collectionCon.html">Collection</a></li>
+                    <li><a href="aproposCon.html">A propos</a></li>
+                    <li><a href="contactCon.html">Contact</a></li>
+                </ul>    
+            </div>
+            <div class="bloc_right">
+                <div style="width:64%">
+                    <i class="fa fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Recherche">
+                </div>
+                <div style="width:12%">
+                    <i class="fa fa-cart-shopping"></i> <span style="color:#000;">3</span>
+                </div>
+                <div>
+                    <a href="../index.html">deconnexion</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end navbar -->
+
+    <!-- start section panier -->
+
+    <div class="bloc_pan">
+        <div class="topPan">
+            <h2>Votre panier</h2>
+            <p>Vous n'est pas prêt à passer la commande? <a href="collectionCon.html" style="color:rgba(254, 102, 102, 1);">Continuer vos achats</a></p>
+        </div>
+        <div class="bottm">
+            <div class="leftPan">
+                <div class="b1">
+                    <div class="imgPan">
+                        <img src="../IMG/pexels-ylanite-koppens-934069.jpg" alt="" width="100%" height="100%" object-fill="cover">
+                    </div>
+                    <div class="textPan">
+                        <h4 class="nonArPan">Tricot</h4>
+                        <p>Taille: <span>L</span></p>
+                        <p>Quantité: <span class="qte">1</span></p>
+                        <p class="prixPan"><span class="prixArPan"></span> fcfa</p>
+                        <a href="#" style="float: right; color:#000;text-decoration: underline;" onclick="removeArticle()">Retirer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="rightPan">
+                <h4>Récapitulatif de la commande</h4>
+                <p>Total <span style="float:right;"><span class="prixArPan"></span> fcfa</span></p>
+                <p>Expéditeur <span style="float:right;">Mr Diara</span></p>
+                <p class="traitPan"></p>
+                <p>Total <span style="float:right;"><span class="prixArPan"></span> fcfa</span></p>
+                <p><a href="https://wa.me/0506348232"><button type="submit" class="btn-detail">Commander sur whatsapp</button></a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- end section panier -->
+
+    <!-- trait de bas -->
+    <div class="traifoo"></div>
+
+    <!-- start footer -->
+    <footer>
+        <div class="top">
+            <div class="fooHea footer-email-form">
+                <h2>Rejoignez notre newsletter</h2>
+                <p>Salut, inscrivez-vous, cela ne prend qu'une seconde pour être le <br> premier à découvrir nos dernières nouvelles et promotions…</p>
+                <div>
+                    <input type="email" placeholder="Adresse email" id="footer-email">
+                    <a href="#"><input type="submit" value="S'inscrire" id="footer-email-btn"></a>
+                </div>
+                
+            </div>
+            <div class="fooHea footer2">
+                <h2>Moko & Co<span style="color:rgba(254, 102, 102, 1);">.</span></h2>
+                <a href="#"><i class="fa fa-phone"></i> +225 0506348232</a><br>
+                <a href="#"><i class="fa fa-location-dot"></i> BP Abidjan, Marcory GFCI</a><br>
+                <a href="#"><i class="fa fa-envelope"></i>  mokonan99@gmail.com</a>
+            </div>
+            <div class="fooHea footer3">
+                <h2>Categories</h2>
+                <a href="#">Collection</a><br>
+                <a href="#">Homme</a><br>
+                <a href="#">Femme</a>
+            </div>
+            <div class="fooHea footer4">
+                <h2>Liens</h2>
+                <a href="indexCon.html">Accueil</a><br>
+                <a href="#">Collection</a><br>
+                <a href="aproposCon.html">A propos</a><br>
+                <a href="contactCon.html">Contact</a>
+            </div>
+        </div>
+        <div class="top3top">
+            <div>Copyrights <span style="color:rgba(254, 102, 102, 1);">Code2.1</span>. Touts droits reservee <span style="color:rgba(254, 102, 102, 1);">moko & cO.</span></div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <script>
+        let bloc = document.querySelector('.b1');
+        let parentBloc = document.querySelector('.leftPan');
+        let dataListPanier = JSON.parse(localStorage.getItem('panierList'));
+        dataListPanier.forEach(item =>{
+            const div = 
+            `<div class="b1" style="display: flex;">
+                <div class="imgPan">
+                    <img src=${item.image} alt="" width="100%" height="100%" object-fill="cover">
+                </div>
+                <div class="textPan">
+                    <h4 class="nonArPan">${item.nom}</h4>
+                    <p>Taille: <span>L</span></p>
+                    <p>Quantité: <span class="qte">${item.quantite}</span></p>
+                    <p class="prixPan"><span class="prixArPan">${item.prix}</span> fcfa</p>
+                    <a href="#" style="float: right; color:#000;text-decoration: underline;">Retirer</a>
+                </div>
+            </div>` 
+
+            parentBloc.innerHTML += div
+            let ttal = document.querySelector('.prixArPan').innerHTML
+
+            function removeArticle(){
+                let article = getArticle();
+                article = article.filter(p => p.nom == product.nom);
+                saveArticle();
+            }
+        });
+
+    </script>
+
+
+</body>
+</html>
